@@ -14,8 +14,10 @@ nav.querySelectorAll('a').forEach(link => {
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  note.textContent = 'Thanks! This is a demo form — hook it up to your email or booking service to go live.';
-  form.reset();
-});
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    note.textContent = 'תודה! זהו טופס לדוגמה — יש לחבר אותו לשירות מייל או הזמנות כדי להפעיל אותו בפועל.';
+    form.reset();
+  });
+}
