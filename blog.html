@@ -3,87 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>בלוג | הדר שלם — יוגה, תזונה ואיורוודה</title>
-<meta name="description" content="מאמרים על יוגה, תזונה ואיורוודה מאת הדר שלם.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧘</text></svg>">
+<title>בלוג | הדר שלם — בחזרה לטבע שלך</title>
+<meta name="description" content="מאמרים על יוגה, תזונה, ניקוי רעלים ובגדים מבדים טבעיים מאת הדר שלם.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2230%22 fill=%22%238a6a45%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=15">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
 </head>
-<body>
+<body class="linen">
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">הדר שלם <span>יוגה</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט">
-      <span></span><span></span><span></span>
-    </button>
+<header class="page-head">
+  <div class="wrap">
+    <div class="brand"><a href="index.html">הדר שלם</a></div>
+    <nav class="nav" style="margin-bottom:0">
+      <a href="index.html#layers">חמש שכבות</a>
+      <a href="classes.html">שיעורים</a>
+      <a href="index.html#products">מוצרים</a>
+      <a href="index.html#about">אודות</a>
+      <a href="blog.html" aria-current="page" style="border-bottom-color:var(--clay)">בלוג</a>
+      <a href="index.html#contact">צרי קשר</a>
+    </nav>
+    <h1>בלוג</h1>
+    <p class="sub">מחשבות על יוגה, תזונה, ניקוי רעלים ובגדים מבדים טבעיים, ישירות מהדר.</p>
   </div>
 </header>
 
-<main>
-
-  <section class="hero" style="padding:56px 0 80px;">
-    <div class="container hero-inner">
-      <nav class="nav" id="nav">
-        <a href="index.html#about">אודות</a>
-        <a href="blog.html" aria-current="page">בלוג</a>
-        <a href="index.html#healing-space">מרחב ריפוי</a>
-        <a href="index.html#contact" class="nav-cta">קביעת שיעור</a>
-      </nav>
-      <p class="eyebrow">מהמזרן ומהמטבח</p>
-      <h1 style="font-size:clamp(2.2rem, 4.6vw, 3.4rem);">בלוג</h1>
-      <p class="hero-text">מחשבות, תרגול ותובנות על יוגה, תזונה ואיורוודה — ישירות מהדר.</p>
+<main class="blog-list">
+  <div class="wrap">
+    <div class="blog-empty">
+      <h2>המאמר הראשון בדרך</h2>
+      <p>הדר עובדת על המאמרים הראשונים. חוזרים לבקר בקרוב.</p>
     </div>
-  </section>
-
-  <section class="blog-list">
-    <div class="container">
-      <div class="blog-empty">
-        <p class="blog-empty-icon" aria-hidden="true">✎</p>
-        <h2>המאמר הראשון בדרך</h2>
-        <p>הדר עובדת כרגע על המאמרים הראשונים. חוזרים לבקר בקרוב.</p>
-      </div>
-
-      <!--
-        מבנה לכתבה בודדת, להעתקה כשיתווסף תוכן אמיתי:
-
-        <article class="blog-card">
-          <p class="blog-card-date">תאריך</p>
-          <h3><a href="#">כותרת המאמר</a></h3>
-          <p>תקציר קצר של המאמר...</p>
-          <a href="#" class="blog-card-link">להמשך קריאה ←</a>
-        </article>
-      -->
-    </div>
-  </section>
-
+    <!--
+      תבנית לכתבה בודדת:
+      <article class="blog-card">
+        <p class="label">תאריך</p>
+        <h3><a href="#">כותרת המאמר</a></h3>
+        <p>תקציר קצר...</p>
+      </article>
+    -->
+  </div>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> הדר שלם | יוגה. כל הזכויות שמורות.</p>
-    <div class="footer-links">
-      <a href="index.html#home">בית</a>
-      <a href="index.html#healing-space">מרחב ריפוי</a>
-      <a href="blog.html">בלוג</a>
-      <a href="index.html#contact">יצירת קשר</a>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/hadar.being/" target="_blank" rel="noopener" aria-label="אינסטגרם">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4ZM8.5 3h7A5.5 5.5 0 0 1 21 8.5v7a5.5 5.5 0 0 1-5.5 5.5h-7A5.5 5.5 0 0 1 3 15.5v-7A5.5 5.5 0 0 1 8.5 3Zm0 1.8A3.7 3.7 0 0 0 4.8 8.5v7a3.7 3.7 0 0 0 3.7 3.7h7a3.7 3.7 0 0 0 3.7-3.7v-7a3.7 3.7 0 0 0-3.7-3.7h-7Z"/></svg>
-      </a>
-      <a href="https://www.facebook.com/hadar.iluz.7" target="_blank" rel="noopener" aria-label="פייסבוק">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 3a8 8 0 0 0-6.9 12l-1.1 4 4.2-1.1A8 8 0 1 0 13.5 3Zm0 1.8a6.2 6.2 0 1 1 0 12.4c-1.1 0-2.2-.3-3.1-.9l-.3-.2-2.5.6.7-2.4-.2-.3a6.2 6.2 0 0 1 5.4-9.2Z"/></svg>
-      </a>
-      <a href="https://wa.me/972507358555" target="_blank" rel="noopener" aria-label="וואטסאפ">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Zm0 1.8a7.2 7.2 0 1 1-3.9 13.3l-.4-.2-2.8.7.8-2.7-.2-.4A7.2 7.2 0 0 1 12 4.8Zm-3.1 3.5c.2 0 .4 0 .5.3l.8 1.9c0 .2 0 .4-.1.6l-.5.6c-.1.2-.1.3 0 .5.4.7 1.5 1.8 2.8 2.3.2.1.3.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.7 1c.2.1.2.3.2.5 0 .8-.7 1.6-1.5 1.7-1.5.2-3.6-.5-5.4-2.3-1.5-1.5-2.2-3-2.4-4.3-.1-1 .6-1.8 1.2-2Z"/></svg>
-      </a>
+<footer class="contact">
+  <div class="wrap">
+    <div class="foot">
+      <span>קינגסטון קליניק, תל אביב-יפו · סטודיו SHALA, האורגים 18, אשדוד</span>
+      <span>&copy; <span id="y"></span> הדר שלם</span>
     </div>
   </div>
 </footer>
-
-<script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
